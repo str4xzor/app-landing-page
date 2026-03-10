@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center center; 
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .features, .pricing, .testimonials, .faq, .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .feature, .pricing-item, .testimonial {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .faq-item {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #f0f0f0;
+            border-radius: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Welcome to Our Service</h1>
+        <p>Your solution for all your needs.</p>
+        <a href="#features">Learn More</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="feature">Feature 1: Description</div>
+        <div class="feature">Feature 2: Description</div>
+        <div class="feature">Feature 3: Description</div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-item">Basic Plan: $10/month</div>
+        <div class="pricing-item">Pro Plan: $20/month</div>
+        <div class="pricing-item">Premium Plan: $30/month</div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">"This service changed my life!" - Customer A</div>
+        <div class="testimonial">"Highly recommended!" - Customer B</div>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">Q: How can I sign up?</div>
+        <div class="faq-item">A: Simply click the 'Sign Up' button!</div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
+<script>
+    // Sample JavaScript code
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Form submitted!');
+    });
+</script>
